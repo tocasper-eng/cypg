@@ -7,16 +7,16 @@ GO
 CREATE TABLE [dbo].[esg_gwp](
 num     bigint IDENTITY(1,1) NOT NULL,--主流水號
 gwp     nvarchar(255) ,    
-AR2     NVARCHAR(48) ,
-AR3     NVARCHAR(48) ,
-AR4     NVARCHAR(48) ,
-AR5     NVARCHAR(48) ,
-AR6     NVARCHAR(48) ,
-
-constraint pk_esg_gwp_num  primary key ( num )  
-)
-GO 
-CREATE INDEX in_esg_gwp_yyyy ON esg_gwp ( gwp )
+AR2     NVARCHAR(48)  ,--1995
+AR3     NVARCHAR(48)  ,--2001
+AR4     NVARCHAR(48)  ,--2007
+AR5     NVARCHAR(48)  ,--2013
+AR6     NVARCHAR(48)  ,--2021
+                      
+constraint pk_esg_gwp _num  primary key ( num )  
+)                     
+GO                    
+CREATE INDEX in_esg_g wp_yyyy ON esg_gwp ( gwp )
 go 
 
  
