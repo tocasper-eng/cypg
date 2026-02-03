@@ -5,6 +5,9 @@
  1) 在父表建立唯一約束 (gwp)
  2) 在子表建立外鍵 (gwp) -> 父表 (gwp)
 */
-ALTER TABLE dbo.esg_gwp
-ADD CONSTRAINT UQ_esg_gwp_gwp UNIQUE NONCLUSTERED (gwp);
- 
+ALTER TABLE esg_gwp_yyyy
+ADD CONSTRAINT fk_esg_gwp_link
+FOREIGN KEY (gwp) 
+REFERENCES esg_gwp(gwp)
+ON DELETE CASCADE
+ON UPDATE CASCADE;

@@ -13,10 +13,10 @@ AR4     NVARCHAR(48)  ,--2007
 AR5     NVARCHAR(48)  ,--2013
 AR6     NVARCHAR(48)  ,--2021
                       
-constraint pk_esg_gwp _num  primary key ( num )  
+constraint pk_esg_gwp_num  primary key ( num )  
 )                     
 GO                    
-CREATE INDEX in_esg_g wp_yyyy ON esg_gwp ( gwp )
+CREATE INDEX in_esg_gwp_yyyy ON esg_gwp ( gwp )
 go 
 
  

@@ -6,6 +6,7 @@ IF OBJECT_ID('up_esg_gwp', 'P') IS NOT NULL
     DROP PROCEDURE up_esg_gwp
 GO
 --exec .dbo.up_esg_gwp 
+--select * from esg_gwp  
 --select * from esg_gwp_yyyy 
  
 
